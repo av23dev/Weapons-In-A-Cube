@@ -94,18 +94,6 @@ public class PlayerMovement : MonoBehaviour
         //xRotation = -mouseY;
         xRotation = Mathf.Clamp(xRotation, -90f, 90f);
 
-        ///////camObj.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
-        ///////camObj.Rotate(Vector3.right * xRotation * mouseSpeedVariable * Time.deltaTime);
-        ///////camObj.localRotation = Quaternion.Euler(xRotation - addedVertRot, 0f, 0f);
-
-        ///////camObj.Rotate(Vector3.right * (xRotation - addedVertRot));
-        
-        ////float clampXRot = camObj.localRotation.x;
-        ////clampXRot = Mathf.Clamp(clampXRot, -90f, 90f);
-
-        ///////camObj.localRotation = Quaternion.Euler(clampXRot, 0, 0);
-        ///////camObj.Rotate(Vector3.right * xRotation);
-        ///
         camObj.localRotation = Quaternion.Euler(xRotation, 0f, 0f);
 
         playerObj.Rotate(Vector3.up * mouseX);
